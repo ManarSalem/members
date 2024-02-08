@@ -1,0 +1,36 @@
+server:
+  port: 8083
+  error:
+    include-message: always
+spring:
+  application:
+    name: address
+#  datasource:
+#    url: jdbc:postgresql://localhost:5446/address
+#    username: postgres
+#    password: password
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/XE
+    username: system
+    password: mypass
+    driver_class_name: oracle.jdbc.OracleDriver
+    hikari:
+      idle_timeout: 10000
+      minimum_idle: 0
+  jpa:
+    open_in_view: false
+    hibernate:
+      ddl_auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#        format_sql: true
+
