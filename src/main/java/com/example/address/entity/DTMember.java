@@ -22,15 +22,8 @@ import static jakarta.persistence.FetchType.EAGER;
 public class DTMember  implements Serializable {
     @Id
 
-//    @SequenceGenerator(
-//            name = "DTMember_sequence",
-//            sequenceName = "DTMember_sequence" ,
-//            allocationSize = 1
-//    )
-//    @GeneratedValue(
-//            strategy = GenerationType.SEQUENCE,
-//            generator = "DTMember_sequence"
-//    )
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+
     private Integer Id;
 
     private String name ;

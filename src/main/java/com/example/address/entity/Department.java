@@ -17,15 +17,8 @@ import java.util.List;
 public class Department {
 
     @Id
-//    @SequenceGenerator(
-//            name = "Department_sequence",
-//            sequenceName = "Department_sequence" ,
-//            allocationSize = 1
-//    )
-//    @GeneratedValue(
-//            strategy = GenerationType.SEQUENCE,
-//            generator = "Department_sequence"
-//    )
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+
     private Integer departmentId;
 
     private String departmentName;

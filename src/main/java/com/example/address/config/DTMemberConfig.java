@@ -16,44 +16,44 @@ public class DTMemberConfig {
     @Bean
     CommandLineRunner commandLineRunner(DTMemberRepository repository, DepartmentRepository departmentRepository) {
         return args -> {
-            DTMember Manar = new DTMember(1,
+            DTMember Manar = new DTMember(
                     "Manar BinOwayid",
                     "MS");
 
-            DTMember Tarek = new DTMember(2,
+            DTMember Tarek = new DTMember(
                     "Tarek Asseri",
                     "MS");
 
-            DTMember Mohammad = new DTMember(3,
+            DTMember Mohammad = new DTMember(
                     "Mohammad ALdress",
                     "MS");
 
-            DTMember Faisal = new DTMember(3,
+            DTMember Faisal = new DTMember(
                     "Faisal ALtweely",
                     "MS");
 
-            DTMember Ziyad = new DTMember(4,
+            DTMember Ziyad = new DTMember(
                     "Ziyad ALmotlaq",
                     "MS");
 
-            DTMember Abdullah = new DTMember(5,
+            DTMember Abdullah = new DTMember(
                     "Abdullah ALmelfi",
                     "MS");
 
-            DTMember Abdullah_Alhabib = new DTMember(6,
+            DTMember Abdullah_Alhabib = new DTMember(
                     "Abdullah ALhabib",
                     "EP");
 
-            DTMember Alwaleed = new DTMember(7,
+            DTMember Alwaleed = new DTMember(
                     "Alwaleed ALsamlaq",
                     "EP");
-            DTMember Faris = new DTMember(8,
+            DTMember Faris = new DTMember(
                     "Faris ALmutairi",
                     "EP");
-            DTMember Mohammad_Aba = new DTMember(9,
+            DTMember Mohammad_Aba = new DTMember(
                     "Mohammad Aba ALkhayl",
                     "EP");
-            DTMember Mohammad_ALsaawi = new DTMember(10,
+            DTMember Mohammad_ALsaawi = new DTMember(
                     "Mohammad ALsaawi",
                     "EP");
 
@@ -77,14 +77,14 @@ public class DTMemberConfig {
 //                    ,"OCP"
 //                    ,"Mohammad Alrashidi",
 //                    members  );
-            Department department2= new Department(1,
+            Department department2= new Department(
 
                     "Dev"
                   );
-            Department department3= new Department(2,
+            Department department3= new Department(
                     "buisness"
             );
-            Department department4= new Department(3,
+            Department department4= new Department(
                     "test"
             );
 

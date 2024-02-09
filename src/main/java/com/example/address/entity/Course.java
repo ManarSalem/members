@@ -16,7 +16,7 @@ import java.util.List;
 @Getter
 public class Course {
     @Id
-//    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer courseId;
     private String courseName;
 

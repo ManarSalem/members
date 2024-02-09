@@ -1,6 +1,8 @@
 package com.example.address.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 
@@ -14,7 +16,7 @@ import lombok.*;
 public class Address {
 
     private String city;
-//    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Id
     private Integer id;
     private Integer dtMemberId;
